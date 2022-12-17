@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* merriweather-700 - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/merriweather-v30-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/merriweather-v30-latin-700.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/merriweather-v30-latin-700.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/merriweather-v30-latin-700.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../fonts/merriweather-v30-latin-700.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../fonts/merriweather-v30-latin-700.svg#Merriweather') format('svg'); /* Legacy iOS */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/poppins-v20-latinpoppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./fonts/poppins-v20-latinpoppins-v20-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */
+      url('./fonts/poppins-v20-latinpoppins-v20-latin-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/poppins-v20-latinpoppins-v20-latin-regular.woff')
+      format('woff'),
+    /* Modern Browsers */
+      url('./fonts/poppins-v20-latinpoppins-v20-latin-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('./fonts/poppins-v20-latinpoppins-v20-latin-regular.svg#Poppins')
+      format('svg'); /* Legacy iOS */
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/poppins-v20-latinpoppins-v20-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./fonts/poppins-v20-latinpoppins-v20-latin-500.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/poppins-v20-latinpoppins-v20-latin-500.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/poppins-v20-latinpoppins-v20-latin-500.woff') format('woff'),
+    /* Modern Browsers */
+      url('./fonts/poppins-v20-latinpoppins-v20-latin-500.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('./fonts/poppins-v20-latinpoppins-v20-latin-500.svg#Poppins')
+      format('svg'); /* Legacy iOS */
+}
+
+:root {
+  --nav-blue: #10153e;
+  --purple: #60679f;
+  --gray-1: #f7f7fa;
+  --gray-2: #e3e5f1;
+  --text-1: 0.75rem;
+  --text-2: 1rem;
+  --text-3: 0.875rem;
+  --text-4: 2rem;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  --font-family-title: Merriweather, serif, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue';
+  --font-family-body: Poppins, sans-serif, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue';
+  --border-gray: 1px solid #e3e5f1;
+  --border-purple: 1px solid #60679f;
+  --border-radius-1: 1em;
+  --border-radius-2: 2em;
+  --box-shadow: 0px 34px 64px rgba(96, 103, 159, 0.2);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
